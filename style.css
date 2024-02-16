@@ -1,0 +1,65 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+}
+
+.main {
+    background-color: #0a152f;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form_logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8rem;
+}
+
+.form_logo img {
+    filter: drop-shadow(1px 2px 50px #CF955B);
+}
+
+.form_main a,
+.form_main input {
+    background-color: inherit;
+    font-family: Apertura;
+    font-size: 36px;
+    text-align: center;
+    color: #CF955B;
+    font-weight: 400;
+    text-align: center;
+    border: none;
+    border-top: 1px solid #FFFFFF80;
+    display: block;
+    width: 70%;
+    padding: 1rem 0rem;
+}
+
+.form_main a {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.form_main input::placeholder {
+    color: #CF955B;
+}
+
+.form_main input:focus {
+    outline: none;
+}
+
+.form_main .tick_image {
+    padding-left: 8rem;
+    padding-top: 2rem;
+}
