@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     var angle = 0;
     var rotationDirection = 1; // 1 for clockwise, -1 for counterclockwise
 
@@ -10,9 +10,10 @@ $(document).ready(function() {
             rotationDirection *= -1;
         }
 
-        $("#rotating_key").css({"transform": "rotate(" + angle + "deg)","transition":"ease .4s"});
+        $("#rotating_key").css({ "transform": "rotate(" + angle + "deg)", "transition": "ease .4s" });
         setTimeout(rotateKey, 50); // Adjust the rotation speed as needed
     }
 
     rotateKey();
+    $(".form_main").effect("bounce", "slow");
 });
